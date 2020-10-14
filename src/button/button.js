@@ -1,19 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const Button = ({ onClick, children }) => {
+export const Button = props => {
+    const { onClick, buttonTitle } = props; // object destruction
 
     return (
-        <button onClick={onClick}>{children}</button>
+        <button onClick={onClick}>{buttonTitle}</button>
     );
 };
 
 Button.propTypes = {
-    children: PropTypes.node,
-    onClick: PropTypes.func
+    buttonTitle: PropTypes.string,
+    onClick: PropTypes.func.isRequired,
 };
 
 Button.defaultProps = {
-    children: 'Default button',
-    onClick: () => {}
+    buttonTitle: 'Default button',
+    onClick: () => console.log('Default'),
 };

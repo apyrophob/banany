@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export const Button = props => {
-    const { onClick, buttonTitle } = props; // object destruction
+    const { onClick, buttonTitle } = props; 
 
     return (
         <button onClick={onClick}>{buttonTitle}</button>

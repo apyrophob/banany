@@ -16,5 +16,5 @@ Button.propTypes = {
 
 Button.defaultProps = {
     buttonTitle: 'Default button',
-    onClick: () => console.log('Default'),
+    onClick: () => console.log('Default'), //todo
 };

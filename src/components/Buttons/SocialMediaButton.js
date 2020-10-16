@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export const SocialMediaButton = props => {
-    const { onClick, } = props; 
+    const { onClick } = props; 
 
     return (
         <button onClick={onClick}></button>
@@ -16,5 +16,5 @@ Button.propTypes = {
 
 Button.defaultProps = {
     buttonTitle: 'Default button',
-    onClick: () => console.log('Default'),
+    onClick: () => console.log('Default'), //todo
 };

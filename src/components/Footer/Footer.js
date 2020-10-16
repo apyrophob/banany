@@ -3,7 +3,7 @@ import { SocialMediaButton } from '../Buttons/SocialMediaButton'
 
 export const Footer = props => {
     return (
-        <div>
+        <footer>
             <div>
                 <p>Contact Info</p>
             </div>
@@ -13,6 +13,6 @@ export const Footer = props => {
             <div>
                 <SocialMediaButton />
             </div>
-        </div>
+        </footer>
     );
 };

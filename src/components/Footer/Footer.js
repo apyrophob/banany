@@ -35,3 +35,6 @@ Footer.defaultProps = {
         iconSrc: "fab fa-instagram",
     },
 };
+
+//todo
+// 1. Component конвенция

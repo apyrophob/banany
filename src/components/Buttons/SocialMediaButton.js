@@ -18,3 +18,6 @@ SocialMediaButton.defaultProps = {
     buttonTitle: 'Default button',
     onClick: () => console.log('Default'), //todo
 };
+
+//todo
+// 1. Component конвенция

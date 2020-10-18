@@ -4,17 +4,19 @@ import { SocialMediaButton } from '../Buttons/SocialMediaButton'
 
 export const Footer = props => {
     return (
-        <div>
-            <div>
+        <footer className="footer">
+            <div className="footer-text">
                 <p>Contact Info</p>
             </div>
-            {props.buttonsSettings.map(el => (
-                <SocialMediaButton
-                    buttonTitle={el.title}
-                    iconSrc={el.iconSrc}
-                />
-            ))}
-        </div>
+            <div className="footer-icons">
+                {props.buttonsSettings.map(el => (
+                    <SocialMediaButton
+                        buttonTitle={el.title}
+                        iconSrc={el.iconSrc}
+                    />
+                ))}
+            </div>
+        </footer>
     );
 };
 

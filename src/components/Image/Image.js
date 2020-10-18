@@ -1,9 +1,12 @@
 import React from 'react';
 
-export const Image = () => {
-    return(
-            <div>
-                <img src=''/>
-            </div>
+export const ImageComponent = props => {
+    const { imgSrc } = props;
+
+    return (
+        <img src={imgSrc} />
     );
 };
+
+
+// todo PropTypes

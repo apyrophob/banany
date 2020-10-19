@@ -1,12 +1,18 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export const ImageComponent = props => {
     const { imgSrc } = props;
 
     return (
-        <img src={imgSrc} />
+        <img className='image' src={imgSrc} />
     );
 };
 
+ImageComponent.PropTypes = {
+    imgSrc: PropTypes.string.isRequired,
+};
 
-// todo PropTypes
+ImageComponent.defautProps = {
+    imgSrc: "fab fa-pinterest",
+};

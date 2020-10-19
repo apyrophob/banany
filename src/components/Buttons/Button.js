@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const Button = props => {
+export const ButtonComponent = props => {
     const { onClick, buttonTitle } = props; 
 
     return (
@@ -9,15 +9,12 @@ export const Button = props => {
     );
 };
 
-Button.propTypes = {
+ButtonComponent.propTypes = {
     buttonTitle: PropTypes.string,
     onClick: PropTypes.func.isRequired,
 };
 
-Button.defaultProps = {
+ButtonComponent.defaultProps = {
     buttonTitle: 'Default button',
-    onClick: () => console.log('Default'), //todo
+    onClick: () => console.log('Default'),
 };
-
-//todo
-// 1. Component конвенция

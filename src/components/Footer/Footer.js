@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { SocialMediaButton } from '../Buttons/SocialMediaButton'
+import { SocialMediaButtonComponent } from '../Buttons/SocialMediaButton'
 
 export const FooterComponent = props => {
     return (
@@ -10,7 +10,7 @@ export const FooterComponent = props => {
             </div>
             <div className="footer-icons">
                 {props.buttonsSettings.map(el => (
-                    <SocialMediaButton
+                    <SocialMediaButtonComponent
                         buttonTitle={el.title}
                         iconSrc={el.iconSrc}
                     />

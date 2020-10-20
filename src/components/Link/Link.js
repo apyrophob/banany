@@ -5,14 +5,10 @@ export const LinkComponent = props => {
     const { linkHref } = props;
 
     return (
-        <link className='link' href={linkHref} />
+        <a className='link' href={linkHref}></a>
     );
 };
 
 LinkComponent.PropTypes = {
     linkHref: PropTypes.string.isRequired,
-};
-
-LinkComponent.defautProps = {
-    linkHref: "someLink.com",
 };

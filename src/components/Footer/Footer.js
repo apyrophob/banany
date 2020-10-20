@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { SocialMediaButton } from '../Buttons/SocialMediaButton'
+import { SocialMediaButtonComponent } from '../Buttons/SocialMediaButton'
 
-export const Footer = props => {
+export const FooterComponent = props => {
     return (
         <footer className="footer">
             <div className="footer-text">
@@ -10,7 +10,7 @@ export const Footer = props => {
             </div>
             <div className="footer-icons">
                 {props.buttonsSettings.map(el => (
-                    <SocialMediaButton
+                    <SocialMediaButtonComponent
                         buttonTitle={el.title}
                         iconSrc={el.iconSrc}
                     />
@@ -20,7 +20,7 @@ export const Footer = props => {
     );
 };
 
-Footer.propTypes = {
+FooterComponent.propTypes = {
     buttonsSettings: PropTypes.arrayOf(
         PropTypes.shape({
             title: PropTypes.string.isRequired,
@@ -29,7 +29,7 @@ Footer.propTypes = {
     ),
 };
 
-Footer.defaultProps = {
+FooterComponent.defaultProps = {
     buttonsSettings: {
         title: "Default button title",
         iconSrc: "fab fa-instagram",

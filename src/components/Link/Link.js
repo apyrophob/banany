@@ -5,7 +5,7 @@ export const LinkComponent = props => {
     const { linkHref, linkTitle } = props;
 
     return (
-    <a className='link' href={linkHref}>{linkTitle}</a>
+        <a className='link' href={linkHref}>{linkTitle}</a>
     );
 };
 

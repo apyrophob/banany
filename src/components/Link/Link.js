@@ -2,13 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export const LinkComponent = props => {
-    const { linkHref } = props;
+    const { linkHref, linkTitle } = props;
 
     return (
-        <a className='link' href={linkHref}></a>
+    <a className='link' href={linkHref}>{linkTitle}</a>
     );
 };
 
-LinkComponent.PropTypes = {
+LinkComponent.propTypes = {
     linkHref: PropTypes.string.isRequired,
+    linkTitle: PropTypes.string.isRequired
 };

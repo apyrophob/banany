@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { ImageComponent } from '../Image/Image'
-// import { LinkComponent } from '../Link/Link'
+import { LinkComponent } from '../Link/Link'
 
 export const InfoSectionComponent = props => {
     const { linkHref, imgSrc } = props;

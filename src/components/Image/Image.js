@@ -9,7 +9,7 @@ export const ImageComponent = props => {
     );
 };
 
-ImageComponent.PropTypes = {
+ImageComponent.propTypes = {
     imgSrc: PropTypes.string.isRequired,
 };
 

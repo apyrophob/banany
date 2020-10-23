@@ -7,7 +7,13 @@ function App() {
     const controls = [
         {
             linkHref: '#',
-            linkTitle: 'Title'
+            linkTitle: 'Title1',
+            
+        },
+        {
+            linkHref: '#',
+            linkTitle: 'Title2',
+            
         }
     ]
 

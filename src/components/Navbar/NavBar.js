@@ -15,9 +15,9 @@ export const NavbarComponent = props => {
                 {controls.map((control) => {
                     return (
                         <li>
-                            <LinkComponent className='nav-link' linkHref={control.linkHref}>
-                                {control.linkTitle}
-                            </LinkComponent>
+                            <LinkComponent className='nav-link'
+                                linkHref={control.linkHref}
+                                linkTitle={control.linkTitle} />
                         </li>
                     )
                 })}

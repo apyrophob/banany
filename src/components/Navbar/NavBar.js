@@ -17,7 +17,8 @@ export const NavbarComponent = props => {
                         <li>
                             <LinkComponent className='nav-link'
                                 linkHref={control.linkHref}
-                                linkTitle={control.linkTitle} />
+                                linkTitle={control.linkTitle}
+                            />
                         </li>
                     )
                 })}

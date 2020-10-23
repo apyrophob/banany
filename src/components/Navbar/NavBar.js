@@ -1,22 +1,23 @@
 import React from 'react';
 
 import { ImageComponent } from '../Image/Image'
+import { LinkComponent } from '../Link/Link'
 
 export const NavbarComponent = props => {
-    const { NavItems } = props;
+    const { controls } = props;
 
     return (
-        <nav className='nav-items'>
+        <nav className='nav-controls'>
             <div className='navbar-logo'>
                 <ImageComponent />
             </div>
             <ul>
-                {NavItems.map((item) => {
+                {controls.map((control) => {
                     return (
                         <li>
-                            <a className='nav-link' href={item.href}>
-                                {item.children}
-                            </a>
+                            <LinkComponent className='nav-link' linkHref={control.linkHref}>
+                                {control.linkTitle}
+                            </LinkComponent>
                         </li>
                     )
                 })}

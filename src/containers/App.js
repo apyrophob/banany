@@ -1,10 +1,19 @@
 import React from 'react';
 import './App.css';
 
+import { NavbarComponent } from '../components/Navbar/NavBar'
+
 function App() {
+    const controls = [
+        {
+            linkHref: '#',
+            linkTitle: 'Title'
+        }
+    ]
+
     return (
         <div className="App">
-          
+            <NavbarComponent controls={controls} />
         </div>
     );
 }

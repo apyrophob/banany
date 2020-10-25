@@ -5,8 +5,7 @@ import { FooterComponent } from '../components/Footer/Footer'
 import { InfoSectionComponent } from '../components/InfoSection/InfoSectionComponent'
 
 export const ContentComponent = props => {
-    const { controls, imgSrcPassedFromAppJS, buttonsSettings, infoSectionConfigs} = props;
-    // console.log(1, props)
+    const { controls, imgSrcPassedFromAppJS, buttonsSettings, infoSectionConfigs } = props;
     return (
         <div>
             <NavbarComponent

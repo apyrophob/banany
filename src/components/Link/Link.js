@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 export const LinkComponent = props => {
     const { linkHref, linkTitle } = props;
-    console.log(1,props);
 
     return (
         <a className='link' href={linkHref}>{linkTitle}</a>

@@ -5,7 +5,6 @@ import { LinkComponent } from '../Link/Link'
 
 export const NavbarComponent = props => {
     const { controls, imgSrcPassedFromAppJS } = props;
-    
 
     return (
         <nav className='nav-controls'>

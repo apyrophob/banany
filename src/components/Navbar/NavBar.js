@@ -4,12 +4,12 @@ import { ImageComponent } from '../Image/Image'
 import { LinkComponent } from '../Link/Link'
 
 export const NavbarComponent = props => {
-    const { controls } = props;
+    const { controls, imgSrcPassedFromAppJS } = props;
 
     return (
         <nav className='nav-controls'>
             <div className='navbar-logo'>
-                <ImageComponent />
+                <ImageComponent imgSrc={imgSrcPassedFromAppJS} />
             </div>
             <ul>
                 {controls.map((control) => {

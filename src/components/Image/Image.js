@@ -14,5 +14,5 @@ ImageComponent.propTypes = {
 };
 
 ImageComponent.defautProps = {
-    imgSrc: "fab fa-pinterest",
+    imgSrc: "default.jpg",
 };

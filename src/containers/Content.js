@@ -5,12 +5,12 @@ import { FooterComponent } from '../components/Footer/Footer'
 import { InfoSectionComponent } from '../components/InfoSection/InfoSectionComponent'
 
 export const ContentComponent = props => {
-    const { controls, imgSrcPassedFromAppJS, buttonsSettings, infoSectionConfigs } = props;
+    const { controls, buttonsSettings, infoSectionConfigs, navbarImageSrc } = props;
     return (
         <div>
             <NavbarComponent
                 controls={controls}
-                imgSrcPassedFromAppJS={imgSrcPassedFromAppJS}
+                imgSrcPassedFromAppJS={navbarImageSrc}
             />
             {infoSectionConfigs.map((config, index) => (
                 <InfoSectionComponent

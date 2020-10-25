@@ -18,6 +18,7 @@ function App() {
                             <ContentComponent
                                 controls={stateCustom.controls}
                                 imgSrcPassedFromAppJS={stateCustom.sourceForImage}
+                                navbarImageSrc={stateCustom.navbarImage}
                                 buttonsSettings={stateCustom.buttonsSettings}
                                 infoSectionConfigs={stateCustom.infoSectionConfigsProject}
                             />
@@ -28,6 +29,7 @@ function App() {
                             <ContentComponent
                                 controls={stateCustom.controls}
                                 imgSrcPassedFromAppJS={stateCustom.sourceForImage}
+
                                 buttonsSettings={stateCustom.buttonsSettings}
                                 infoSectionConfigs={stateCustom.infoSectionConfigsThesis}
                             />}
@@ -37,6 +39,7 @@ function App() {
                             <ContentComponent
                                 controls={stateCustom.controls}
                                 imgSrcPassedFromAppJS={stateCustom.sourceForImage}
+
                                 buttonsSettings={stateCustom.buttonsSettings}
                                 infoSectionConfigs={stateCustom.infoSectionConfigsProcess}
                             />}

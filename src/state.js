@@ -14,6 +14,7 @@ export const stateCustom = {
         },
     ],
     sourceForImage: 'img.jpeg',
+    navbarImage: 'nav-bar-main.jpeg',
     buttonsSettings: [
         {
             title: 'instagram',

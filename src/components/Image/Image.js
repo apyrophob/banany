@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 export const ImageComponent = props => {
     const { imgSrc } = props;
+    console.log(1, props)
 
     return (
         <img className='image' src={imgSrc} />

@@ -2,9 +2,8 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter, Route } from 'react-router-dom'
 
+import { ContentComponent } from '../containers/Content'
 import { NavbarComponent } from '../components/Navbar/NavBar'
-import { FooterComponent } from '../components/Footer/Footer'
-import { InfoSectionComponent } from '../components/InfoSection/InfoSectionComponent'
 
 function App() {
 
@@ -30,18 +29,60 @@ function App() {
                 iconSrc: 'fab fa-instagram',
             },
         ],
-        infoSectionConfigs: [
+        infoSectionConfigsProject: [
             {
                 linkHref: '#',
                 imgSrc: 'img.jpeg',
                 linkTitle: 'Title1',
+                infoSectionText: 'Project infoSection',
             },
             {
                 linkHref: '#2',
                 imgSrc: 'img2.jpeg',
                 linkTitle: 'Title2',
+                infoSectionText: 'Project infoSection',
             },
-        ]
+        ],
+        infoSectionConfigsThesis: [
+            {
+                linkHref: '#',
+                imgSrc: 'img.jpeg',
+                linkTitle: 'Title1',
+                infoSectionText: 'Thesis infoSection',
+            },
+            {
+                linkHref: '#2',
+                imgSrc: 'img2.jpeg',
+                linkTitle: 'Title2',
+                infoSectionText: 'Thesis infoSection',
+            },
+            {
+                linkHref: '#2',
+                imgSrc: 'img2.jpeg',
+                linkTitle: 'Title2',
+                infoSectionText: 'Thesis infoSection',
+            },
+        ],
+        infoSectionConfigsProcess: [
+            {
+                linkHref: '#',
+                imgSrc: 'img.jpeg',
+                linkTitle: 'Title1',
+                infoSectionText: 'Process infoSection',
+            },
+            {
+                linkHref: '#2',
+                imgSrc: 'img2.jpeg',
+                linkTitle: 'Title2',
+                infoSectionText: 'Process infoSection',
+            },
+            {
+                linkHref: '#2',
+                imgSrc: 'img2.jpeg',
+                linkTitle: 'Title2',
+                infoSectionText: 'Process infoSection',
+            },
+        ],
     }
 
 
@@ -51,35 +92,41 @@ function App() {
     return (
         <div className="App">
             <BrowserRouter>
+                <Route path='/'
+                    render={() =>
+                        <NavbarComponent
+                            controls={stateCustom.controls}
+                            imgSrcPassedFromAppJS={stateCustom.sourceForImage}
+                        />
+                    }
+                />
                 <Route path='/project'
                     render={() =>
-                        <div>
-                            <NavbarComponent
-                                controls={stateCustom.controls}
-                                imgSrcPassedFromAppJS={stateCustom.sourceForImage}
-                            />
-                            {stateCustom.infoSectionConfigs.map(config => (
-                                <InfoSectionComponent
-                                    linkHref={config.linkTitle}
-                                    imgSrc={config.imgSrc}
-                                    linkTitle={config.linkTitle}
-                                />
-                            ))}
-                            <FooterComponent buttonsSettings={stateCustom.buttonsSettings} />
-                        </div>
+                        <ContentComponent
+                            controls={stateCustom.controls}
+                            imgSrcPassedFromAppJS={stateCustom.sourceForImage}
+                            buttonsSettings={stateCustom.buttonsSettings}
+                            infoSectionConfigs={stateCustom.infoSectionConfigsProject}
+                        />
                     }
                 />
                 <Route path='/thesis'
-                    render={() => <NavbarComponent
-                        controls={stateCustom.controls}
-                        imgSrcPassedFromAppJS={stateCustom.sourceForImage}
-                    />}
+                    render={() =>
+                        <ContentComponent
+                            controls={stateCustom.controls}
+                            imgSrcPassedFromAppJS={stateCustom.sourceForImage}
+                            buttonsSettings={stateCustom.buttonsSettings}
+                            infoSectionConfigs={stateCustom.infoSectionConfigsThesis}
+                        />}
                 />
                 <Route path='/process'
-                    render={() => <NavbarComponent
-                        controls={stateCustom.controls}
-                        imgSrcPassedFromAppJS={stateCustom.sourceForImage}
-                    />}
+                    render={() =>
+                        <ContentComponent
+                            controls={stateCustom.controls}
+                            imgSrcPassedFromAppJS={stateCustom.sourceForImage}
+                            buttonsSettings={stateCustom.buttonsSettings}
+                            infoSectionConfigs={stateCustom.infoSectionConfigsProcess}
+                        />}
                 />
             </BrowserRouter>
         </div>

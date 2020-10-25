@@ -1,18 +1,30 @@
-// const { render } = require("@testing-library/react")
+import React from 'react';
 
-// render(
-//     <div>
-//         <NavbarComponent
-//             controls={stateCustom.controls}
-//             imgSrcPassedFromAppJS={stateCustom.sourceForImage}
-//         />
-//         {stateCustom.infoSectionConfigs.map(config => (
-//             <InfoSectionComponent
-//                 linkHref={config.linkTitle}
-//                 imgSrc={config.imgSrc}
-//                 linkTitle={config.linkTitle}
-//             />
-//         ))}
-//         <FooterComponent buttonsSettings={stateCustom.buttonsSettings} />
-//     </div>
-// );
+import { NavbarComponent } from '../components/Navbar/NavBar'
+import { FooterComponent } from '../components/Footer/Footer'
+import { InfoSectionComponent } from '../components/InfoSection/InfoSectionComponent'
+
+export const ContentComponent = props => {
+    const { controls, imgSrcPassedFromAppJS, buttonsSettings, infoSectionConfigs} = props;
+    // console.log(1, props)
+    return (
+        <div>
+            <NavbarComponent
+                controls={controls}
+                imgSrcPassedFromAppJS={imgSrcPassedFromAppJS}
+            />
+            {infoSectionConfigs.map((config, index) => (
+                <InfoSectionComponent
+                    key={index}
+                    linkHref={config.linkTitle}
+                    imgSrc={config.imgSrc}
+                    linkTitle={config.linkTitle}
+                    infoSectionText={config.infoSectionText}
+                />
+            ))}
+            <FooterComponent buttonsSettings={buttonsSettings} />
+        </div>
+    );
+};
+
+

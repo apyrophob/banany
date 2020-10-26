@@ -1,26 +1,30 @@
 export const stateCustom = {
-    controls: [
-        {
-            linkHref: '/project',
-            linkTitle: 'Project'
-        },
-        {
-            linkHref: '/thesis',
-            linkTitle: 'Thesis'
-        },
-        {
-            linkHref: '/process',
-            linkTitle: 'Process'
-        },
-    ],
-    sourceForImage: 'img.jpeg',
-    navbarImage: 'nav-bar-main.jpeg',
-    buttonsSettings: [
-        {
-            title: 'instagram',
-            iconSrc: 'fab fa-instagram',
-        },
-    ],
+    navbarSettings: {
+        controls: [
+            {
+                linkHref: '/project',
+                linkTitle: 'Project'
+            },
+            {
+                linkHref: '/thesis',
+                linkTitle: 'Thesis'
+            },
+            {
+                linkHref: '/process',
+                linkTitle: 'Process'
+            },
+        ],
+        navbarImage: 'nav-bar-main.jpeg',
+    },
+    footerSettings: {
+        buttonsSettings: [
+            {
+                title: 'instagram',
+                iconSrc: 'fab fa-instagram',
+            },
+        ],
+        footerText: 'Contact Info',
+    },
     infoSectionConfigsProject: [
         {
             linkHref: '#',

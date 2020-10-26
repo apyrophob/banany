@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { NavbarComponent } from '../components/Navbar/NavBar'
-import { FooterComponent } from '../components/Footer/Footer'
-import { InfoSectionComponent } from '../components/InfoSection/InfoSectionComponent'
+import { NavbarComponent } from '../Navbar/NavBar'
+import { FooterComponent } from '../Footer/Footer'
+import { InfoSectionComponent } from '../InfoSection/InfoSectionComponent'
 
 export const ContentComponent = props => {
     const { controls, buttonsSettings, infoSectionConfigs, navbarImageSrc } = props;

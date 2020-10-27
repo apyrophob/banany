@@ -3,7 +3,7 @@ import './App.css';
 import { BrowserRouter, Route } from 'react-router-dom'
 import { stateCustom } from '../state';
 
-import { ContentComponent } from '../containers/Content'
+import { ContentComponent } from '../components/Content/Content'
 
 function App() {
 

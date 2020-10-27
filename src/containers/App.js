@@ -16,10 +16,8 @@ function App() {
                     <Route path='/project'
                         render={() =>
                             <ContentComponent
-                                controls={stateCustom.controls}
-                                imgSrcPassedFromAppJS={stateCustom.sourceForImage}
-                                navbarImageSrc={stateCustom.navbarImage}
-                                buttonsSettings={stateCustom.buttonsSettings}
+                                navbarSettings={stateCustom.navbarSettings}
+                                footerSettings={stateCustom.footerSettings}
                                 infoSectionConfigs={stateCustom.infoSectionConfigsProject}
                             />
                         }
@@ -27,20 +25,16 @@ function App() {
                     <Route path='/thesis'
                         render={() =>
                             <ContentComponent
-                                controls={stateCustom.controls}
-                                imgSrcPassedFromAppJS={stateCustom.sourceForImage}
-
-                                buttonsSettings={stateCustom.buttonsSettings}
+                                navbarSettings={stateCustom.navbarSettings}
+                                footerSettings={stateCustom.footerSettings}
                                 infoSectionConfigs={stateCustom.infoSectionConfigsThesis}
                             />}
                     />
                     <Route path='/process'
                         render={() =>
                             <ContentComponent
-                                controls={stateCustom.controls}
-                                imgSrcPassedFromAppJS={stateCustom.sourceForImage}
-
-                                buttonsSettings={stateCustom.buttonsSettings}
+                                navbarSettings={stateCustom.navbarSettings}
+                                footerSettings={stateCustom.footerSettings}
                                 infoSectionConfigs={stateCustom.infoSectionConfigsProcess}
                             />}
                     />

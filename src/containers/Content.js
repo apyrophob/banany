@@ -21,7 +21,7 @@ export const ContentComponent = props => {
                     infoSectionText={config.infoSectionText}
                 />
             ))}
-            <FooterComponent 
+            <FooterComponent
                 buttonsSettings={footerSettings.buttonsSettings}
                 footerText={footerSettings.footerText}
             />

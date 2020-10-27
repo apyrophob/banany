@@ -12,9 +12,9 @@ export const NavbarComponent = props => {
                 <ImageComponent imgSrc={navbarImage} />
             </div>
             <ul>
-                {controls.map((control) => {
+                {controls.map((control, index) => {
                     return (
-                        <li>
+                        <li key={control.id}>
                             <LinkComponent className='nav-link'
                                 linkHref={control.linkHref}
                                 linkTitle={control.linkTitle}

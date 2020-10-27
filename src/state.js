@@ -3,15 +3,18 @@ export const stateCustom = {
         controls: [
             {
                 linkHref: '/project',
-                linkTitle: 'Project'
+                linkTitle: 'Project',
+                id: 'sdmnms',
             },
             {
                 linkHref: '/thesis',
-                linkTitle: 'Thesis'
+                linkTitle: 'Thesis',
+                id: 'nmdbmsdbfmns',
             },
             {
                 linkHref: '/process',
-                linkTitle: 'Process'
+                linkTitle: 'Process',
+                id: 'asndajsn',
             },
         ],
         navbarImage: 'nav-bar-main.jpeg',

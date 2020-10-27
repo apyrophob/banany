@@ -5,12 +5,12 @@ import { FooterComponent } from '../components/Footer/Footer'
 import { InfoSectionComponent } from '../components/InfoSection/InfoSectionComponent'
 
 export const ContentComponent = props => {
-    const { controls, buttonsSettings, infoSectionConfigs, navbarImageSrc } = props;
+    const { navbarSettings, footerSettings, infoSectionConfigs } = props;
     return (
         <div>
             <NavbarComponent
-                controls={controls}
-                imgSrcPassedFromAppJS={navbarImageSrc}
+                controls={navbarSettings.controls}
+                navbarImage={navbarSettings.navbarImage}
             />
             {infoSectionConfigs.map((config, index) => (
                 <InfoSectionComponent
@@ -21,7 +21,10 @@ export const ContentComponent = props => {
                     infoSectionText={config.infoSectionText}
                 />
             ))}
-            <FooterComponent buttonsSettings={buttonsSettings} />
+            <FooterComponent
+                buttonsSettings={footerSettings.buttonsSettings}
+                footerText={footerSettings.footerText}
+            />
         </div>
     );
 };

@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 import { SocialMediaButtonComponent } from '../Buttons/SocialMediaButton'
 
 export const FooterComponent = props => {
-    const { buttonsSettings } = props;
+    const { buttonsSettings, footerText } = props;
 
         
     return (
         <footer className="footer">
             <div className="footer-text">
-                <p>Contact Info</p>
+                <p>{ footerText }</p>
             </div>
             <div className="footer-icons">
                 {buttonsSettings.map(btnSettings => (

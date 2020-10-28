@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import { ImageComponent } from '../Image/Image'
 import { LinkComponent } from '../Link/Link'
@@ -25,4 +26,14 @@ export const NavbarComponent = props => {
             </ul>
         </nav>
     );
+};
+
+NavbarComponent.PropTypes = {
+    controls: PropTypes.arrayOf(
+        PropTypes.shape({
+            linkHref: PropTypes.string.isRequired,
+            linkTitle: PropTypes.string.isRequired,
+        })
+    ),
+    navbarImage: PropTypes.string.isRequired,
 };

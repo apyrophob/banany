@@ -30,6 +30,7 @@ FooterComponent.propTypes = {
             iconSrc: PropTypes.string.isRequired,
         }).isRequired
     ),
+    footerText: PropTypes.string.isRequired,
 };
 
 FooterComponent.defaultProps = {

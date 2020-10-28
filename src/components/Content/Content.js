@@ -31,14 +31,6 @@ export const ContentComponent = props => {
 };
 
 ContentComponent.propTypes = {
-    navbarSettings: PropTypes.shape({
-        controls: PropTypes.array.isRequired,
-        navbarImage: PropTypes.string.isRequired,
-    }),
-    footerSettings: PropTypes.shape ({
-        buttonsSettings: PropTypes.array.isRequired,
-        footerText: PropTypes.string.isRequired,
-    }),
     infoSectionConfigs: PropTypes.arrayOf(
         PropTypes.shape({
             linkHref: PropTypes.string.isRequired,

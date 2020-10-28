@@ -7,7 +7,6 @@ import { stateCustom } from '../state';
 import { ContentComponent } from '../components/Content/Content'
 
 const App = () => {
-    const { stateCustom } = props;
 
     return (
         <div className="App">

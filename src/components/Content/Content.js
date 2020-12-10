@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import { NavbarComponent } from '../Navbar/NavBar'
 import { FooterComponent } from '../Footer/Footer'
@@ -27,6 +28,17 @@ export const ContentComponent = props => {
             />
         </div>
     );
+};
+
+ContentComponent.propTypes = {
+    infoSectionConfigs: PropTypes.arrayOf(
+        PropTypes.shape({
+            linkHref: PropTypes.string.isRequired,
+            imgSrc: PropTypes.string.isRequired,
+            linkTitle: PropTypes.string.isRequired,
+            infoSectionText: PropTypes.string.isRequired,
+        })
+    ),
 };
 
 

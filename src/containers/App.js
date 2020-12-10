@@ -1,16 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './App.css';
-import { BrowserRouter, Route } from 'react-router-dom'
+import { BrowserRouter, Route } from 'react-router-dom';
 import { stateCustom } from '../state';
 
-import { ContentComponent } from '../components/Content/Content'
+import { ContentComponent } from '../components/Content/Content';
+import { NavbarComponent } from '../components/Navbar/NavBar'
+import { FooterComponent } from '../components/Footer/Footer'
+
 
 const App = () => {
 
     return (
         <div className="App">
             <BrowserRouter>
+                <NavbarComponent
+                    controls={stateCustom.navbarSettings.controls}
+                    navbarImage={stateCustom.navbarSettings.navbarImage}
+                />
                 <Route
                     path='/'
                 >
@@ -40,6 +47,10 @@ const App = () => {
                             />}
                     />
                 </Route>
+                <FooterComponent
+                    buttonsSettings={stateCustom.footerSettings.buttonsSettings}
+                    footerText={stateCustom.footerSettings.footerText}
+                />
             </BrowserRouter>
         </div>
     );
